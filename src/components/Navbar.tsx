@@ -25,7 +25,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-background/80 backdrop-blur-md border-b border-border"
+          ? "bg-background/90 backdrop-blur-md border-b border-border shadow-sm"
           : "bg-transparent"
       }`}
     >
@@ -54,7 +54,7 @@ const Navbar = () => {
               href="/Devanshi_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 text-sm rounded-md border border-primary text-primary hover:bg-primary/10 transition-colors font-mono"
+              className="px-4 py-2 text-sm rounded-md border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors font-mono"
             >
               Resume
             </a>
@@ -73,7 +73,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-16 left-0 right-0 bg-background/95 backdrop-blur-md border-b border-border">
+        <div className="md:hidden absolute top-16 left-0 right-0 bg-background/95 backdrop-blur-md border-b border-border shadow-lg">
           <div className="container px-6 py-6 flex flex-col gap-4">
             {navLinks.map((link) => (
               <a
@@ -90,7 +90,7 @@ const Navbar = () => {
               href="/Devanshi_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 px-4 py-3 text-center rounded-md border border-primary text-primary hover:bg-primary/10 transition-colors font-mono"
+              className="mt-4 px-4 py-3 text-center rounded-md border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors font-mono"
             >
               Resume
             </a>

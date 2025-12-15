@@ -57,7 +57,7 @@ const Contact = () => {
               
               <a
                 href="mailto:devanshi.shah.sw@gmail.com"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-medium transition-all hover:scale-105 glow"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-medium transition-all hover:scale-105 shadow-md hover:shadow-lg"
               >
                 <Mail className="w-5 h-5" />
                 Say Hello
@@ -104,7 +104,7 @@ const Contact = () => {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center w-12 h-12 rounded-lg border border-border bg-card/50 backdrop-blur-sm transition-all hover:border-primary hover:text-primary"
+                      className="flex items-center justify-center w-12 h-12 rounded-lg border border-border bg-card shadow-sm transition-all hover:border-primary hover:text-primary hover:shadow-md"
                       aria-label={link.label}
                     >
                       <link.icon className="w-5 h-5" />
