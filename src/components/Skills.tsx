@@ -5,6 +5,10 @@ const Skills = () => {
       skills: ["Docker", "Jenkins", "Terraform", "Ansible", "AWS EC2", "GitHub Actions", "CI/CD", "YAML"],
     },
     {
+      title: "GRC & Risk Management",
+      skills: ["GRC Fundamentals", "Risk Register", "Risk Assessment", "Audit Processes", "Security Policy", "COBIT", "ITIL"],
+    },
+    {
       title: "Programming",
       skills: ["Python", "Django", "HTML", "Java", "Linux", "Bash"],
     },
@@ -13,8 +17,8 @@ const Skills = () => {
       skills: ["MySQL", "Pandas", "NumPy", "Jupyter Notebook"],
     },
     {
-      title: "Tools & Frameworks",
-      skills: ["Git", "GitHub", "Jira", "Microsoft Project", "COBIT", "ITIL"],
+      title: "Tools & Collaboration",
+      skills: ["Git", "GitHub", "Jira", "Microsoft Project", "Google Suite", "AI Tools"],
     },
   ];
 
@@ -26,9 +30,9 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-24 relative bg-card/30">
+    <section id="skills" className="py-24 relative bg-secondary/30">
       <div className="container px-6">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           {/* Section header */}
           <div className="flex items-center gap-4 mb-12">
             <code className="text-primary font-mono text-sm">02.</code>
@@ -37,11 +41,11 @@ const Skills = () => {
           </div>
 
           {/* Technical skills */}
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {skillCategories.map((category, index) => (
               <div
                 key={index}
-                className="p-6 rounded-xl border border-border bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all group"
+                className="p-6 rounded-xl border border-border bg-card shadow-sm hover:shadow-md hover:border-primary/30 transition-all group"
               >
                 <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-primary" />
@@ -62,7 +66,7 @@ const Skills = () => {
           </div>
 
           {/* Soft skills */}
-          <div className="p-6 rounded-xl border border-border bg-card/50 backdrop-blur-sm">
+          <div className="p-6 rounded-xl border border-border bg-card shadow-sm">
             <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-primary" />
               Soft Skills

@@ -25,7 +25,7 @@ const Certifications = () => {
   ];
 
   return (
-    <section id="certifications" className="py-24 relative bg-card/30">
+    <section id="certifications" className="py-24 relative bg-secondary/30">
       <div className="container px-6">
         <div className="max-w-4xl mx-auto">
           {/* Section header */}
@@ -39,7 +39,7 @@ const Certifications = () => {
             {certifications.map((cert, index) => (
               <div
                 key={index}
-                className="group flex items-start gap-4 p-5 rounded-xl border border-border bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all"
+                className="group flex items-start gap-4 p-5 rounded-xl border border-border bg-card shadow-sm hover:shadow-md hover:border-primary/30 transition-all"
               >
                 <div className="p-2 rounded-lg bg-primary/10 text-primary shrink-0">
                   <Award className="w-5 h-5" />

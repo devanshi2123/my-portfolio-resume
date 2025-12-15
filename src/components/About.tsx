@@ -34,18 +34,17 @@ const About = () => {
             {/* Bio */}
             <div className="space-y-6">
               <p className="text-muted-foreground leading-relaxed">
-                I'm an aspiring IT enthusiast with hands-on experience in software development, 
-                databases, and web technologies. Currently exploring DevOps tools and practices, 
-                with a strong interest in automation, cloud technologies, and continuous learning.
+                I'm an aspiring IT professional with hands-on experience in software development, 
+                DevOps practices, and IT governance. Currently building expertise in cloud infrastructure, 
+                automation, and risk management.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                I'm passionate about building scalable infrastructure and automating deployment 
-                pipelines. My focus areas include containerization, CI/CD, and cloud platforms 
-                like AWS.
+                My focus areas include containerization with Docker, CI/CD pipelines, AWS cloud services, 
+                and GRC (Governance, Risk, and Compliance) frameworks like COBIT and ITIL.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                When I'm not writing infrastructure code, I'm learning about IT governance, 
-                risk management, and compliance frameworks like COBIT and ITIL.
+                I'm passionate about bridging the gap between technical implementation and 
+                business governance, ensuring secure and compliant IT infrastructure.
               </p>
             </div>
 
@@ -77,7 +76,7 @@ const About = () => {
                         {edu.period}
                       </span>
                       {edu.gpa && (
-                        <span className="text-primary">GPA: {edu.gpa}</span>
+                        <span className="text-primary font-medium">GPA: {edu.gpa}</span>
                       )}
                     </div>
                   </div>

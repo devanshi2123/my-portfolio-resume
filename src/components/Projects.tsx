@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Server, GitBranch, Cloud, Globe } from "lucide-react";
+import { ExternalLink, Github, Server, GitBranch, Cloud, Globe, Shield } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -16,6 +16,14 @@ const Projects = () => {
         "Implemented a CI/CD pipeline with GitHub Actions to automate build, test, and deployment of a Dockerized Django app. Integrated PyTest for automated testing.",
       tech: ["GitHub Actions", "Docker", "Django", "PyTest", "SSH"],
       icon: GitBranch,
+      featured: true,
+    },
+    {
+      title: "Information Systems Risk Analysis - Infosys",
+      description:
+        "Conducted comprehensive IS Risk Analysis covering asset management, risk identification, risk assessment with sample matrix, and security policy evaluation. Reviewed audit processes and proposed corrective actions.",
+      tech: ["Risk Assessment", "COBIT", "Audit", "Compliance", "GRC"],
+      icon: Shield,
       featured: true,
     },
     {
@@ -39,7 +47,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-24 relative">
       <div className="container px-6">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           {/* Section header */}
           <div className="flex items-center gap-4 mb-12">
             <code className="text-primary font-mono text-sm">03.</code>
@@ -54,7 +62,7 @@ const Projects = () => {
               .map((project, index) => (
                 <div
                   key={index}
-                  className="group relative p-8 rounded-xl border border-border bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all"
+                  className="group relative p-8 rounded-xl border border-border bg-card shadow-sm hover:shadow-md hover:border-primary/30 transition-all"
                 >
                   <div className="flex items-start gap-4">
                     <div className="p-3 rounded-lg bg-primary/10 text-primary">
@@ -95,7 +103,7 @@ const Projects = () => {
               .map((project, index) => (
                 <div
                   key={index}
-                  className="group p-6 rounded-xl border border-border bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all"
+                  className="group p-6 rounded-xl border border-border bg-card shadow-sm hover:shadow-md hover:border-primary/30 transition-all"
                 >
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-2 rounded-lg bg-primary/10 text-primary">
